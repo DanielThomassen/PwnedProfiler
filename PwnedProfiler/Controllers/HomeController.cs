@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using PwnedProfiler.Models;
 
@@ -15,18 +11,17 @@ namespace PwnedProfiler.Controllers
             return View();
         }
 
-        public IActionResult About()
+        [HttpPost]
+        public IActionResult Index(string accountName)
         {
-            ViewData["Message"] = "Your application description page.";
-
-            return View();
-        }
-
-        public IActionResult Contact()
-        {
-            ViewData["Message"] = "Your contact page.";
-
-            return View();
+            var profiler = new Logic.PwnedProfiler();
+            if (string.IsNullOrEmpty(accountName))
+            {
+                return View();
+            }
+            ViewBag.input = accountName;
+            var result = profiler.ProfileAccount(accountName);
+            return View(result.Result);
         }
 
         public IActionResult Error()
