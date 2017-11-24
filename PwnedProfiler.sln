@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PwnedProfiler", "PwnedProfiler\PwnedProfiler.csproj", "{EE5B689B-4BB7-47B9-A27A-F43947469962}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EE5B689B-4BB7-47B9-A27A-F43947469962}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE5B689B-4BB7-47B9-A27A-F43947469962}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE5B689B-4BB7-47B9-A27A-F43947469962}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE5B689B-4BB7-47B9-A27A-F43947469962}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E84360BA-7960-469C-B1A9-59C80301F346}
+	EndGlobalSection
+EndGlobal
